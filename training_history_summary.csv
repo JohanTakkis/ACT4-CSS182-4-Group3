@@ -1,0 +1,22 @@
+model,epoch,training_loss,validation_loss,precision,recall,f1,perplexity,training_time_sec,notes
+BERT,1,,,,,,,,"No log on training loss for epoch 1 (Trainer default logging interval)"
+BERT,2,,,,,,,,
+BERT,3,,,,,,,,
+BERT,final_eval,,,0.867600,0.867500,0.867000,,175.50,"Per-epoch time = 58.5s avg over 3 epochs"
+GPT,1,,,,,,,,
+GPT,2,,,,,,,,
+GPT,3,,,,,,,,
+GPT,4,,,,,,,,
+GPT,5,,,,,,,,
+GPT,final_eval,,,,,,36.5600,1113.00,"Per-epoch time = 222.6s total / 5 epochs"
+Text-GAN,1,,,,,,,2.10,"D loss: 0.8647 | G loss: 1.2574 | D acc: 0.8984"
+Text-GAN,2,,,,,,,1.10,"D loss: 0.1341 | G loss: 3.7429 | D acc: 0.9960"
+Text-GAN,3,,,,,,,0.90,"D loss: 0.0452 | G loss: 5.6293 | D acc: 0.9986"
+Text-GAN,4,,,,,,,0.90,"D loss: 0.0223 | G loss: 6.7706 | D acc: 0.9992"
+Text-GAN,5,,,,,,,0.90,"D loss: 0.0149 | G loss: 7.8727 | D acc: 0.9992"
+Text-GAN,6,,,,,,,0.90,"D loss: 0.0105 | G loss: 8.6345 | D acc: 0.9995"
+Text-GAN,7,,,,,,,0.90,"D loss: 0.0072 | G loss: 9.4537 | D acc: 0.9999 (discriminator near-saturated)"
+Text-GAN,8,,,,,,,0.90,"D loss: 0.0060 | G loss: 10.1737 | D acc: 0.9999"
+Text-GAN,9,,,,,,,0.90,"D loss: 0.0052 | G loss: 10.6960 | D acc: 0.9999"
+Text-GAN,10,,,,,,,0.90,"D loss: 0.0041 | G loss: 10.9807 | D acc: 0.9999 (discriminator fully dominant, no generator recovery observed)"
+Text-GAN,final_eval,,,1.0000,1.0000,1.0000,,1.00,"Accuracy=1.0000 (discriminator, held-out 500 real vs 500 generated); BLEU=0.0000, ROUGE-L=0.0100 (generator, vs real corpus); per-epoch time = avg of 10 epochs above"
