@@ -1,0 +1,10 @@
+{
+  "epochs": 5,
+  "total_train_time_s": 1113.0,
+  "avg_epoch_time_s": 222.6,
+  "final_metrics": {
+    "bleu_4": 0.0004,
+    "rouge_l": 0.1162,
+    "perplexity_val": 36.56
+  }
+}

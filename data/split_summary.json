@@ -1,0 +1,23 @@
+{
+  "dataset": "stanfordnlp/imdb",
+  "dataset_url": "https://huggingface.co/datasets/stanfordnlp/imdb",
+  "splits": {
+    "train": {
+      "size": 4000,
+      "positive": 1985,
+      "negative": 2015
+    },
+    "val": {
+      "size": 1000,
+      "positive": 521,
+      "negative": 479
+    },
+    "test": {
+      "size": 1000,
+      "positive": 488,
+      "negative": 512
+    }
+  },
+  "corpus_lines": 6000,
+  "note": "Splits reconstructed from the executed notebook's printed cell output (Part 1.4). Raw train.json/val.json/test.json/corpus.txt are produced directly by the notebook at runtime in Colab and are not re-serialized here since the underlying IMDb text is not embedded in cell outputs."
+}

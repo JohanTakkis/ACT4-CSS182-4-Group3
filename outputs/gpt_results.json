@@ -1,0 +1,12 @@
+{
+  "model": "distilgpt2",
+  "task": "Causal Language Modeling / Text Generation",
+  "precision_macro": "N/A",
+  "recall_macro": "N/A",
+  "f1_macro": "N/A",
+  "bleu_4": 0.0004,
+  "rouge_l": 0.1162,
+  "perplexity": 36.56,
+  "avg_epoch_time_s": 222.6,
+  "epochs": 5
+}

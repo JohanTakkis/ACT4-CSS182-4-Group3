@@ -1,0 +1,17 @@
+{
+  "model": "Text-GAN (1D-CNN Discriminator + GRU Generator)",
+  "task": "Adversarial Text Generation",
+  "discriminator": {
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "accuracy": 1.0
+  },
+  "generator": {
+    "bleu_4": 0.0,
+    "rouge_l": 0.01
+  },
+  "avg_epoch_time_s": 1.0,
+  "epochs": 10,
+  "note": "Discriminator reaching 1.0000 across all metrics combined with near-zero generator BLEU/ROUGE indicates mode collapse, not successful generation. See Part 6.3.3 of the notebook for full analysis."
+}

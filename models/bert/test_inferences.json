@@ -1,0 +1,5 @@
+[
+  {
+    "note": "Sample inference predictions are produced at runtime by bert_trainer.predict(bert_test_ds) and depend on the actual IMDb test texts loaded in Colab; full classification report (1000 examples) is summarized in training_history.json above."
+  }
+]

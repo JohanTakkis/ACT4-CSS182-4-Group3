@@ -1,0 +1,51 @@
+{
+  "dataset": "stanfordnlp/imdb",
+  "dataset_url": "https://huggingface.co/datasets/stanfordnlp/imdb",
+  "splits": {
+    "train": 4000,
+    "val": 1000,
+    "test": 1000
+  },
+  "variants": {
+    "BERT": {
+      "model": "bert-base-uncased",
+      "task": "Sentiment Classification",
+      "precision_macro": 0.8676,
+      "recall_macro": 0.8675,
+      "f1_macro": 0.867,
+      "accuracy": 0.867,
+      "rouge_l": 0.6714,
+      "avg_epoch_time_s": 58.5,
+      "epochs": 3
+    },
+    "GPT2": {
+      "model": "distilgpt2",
+      "task": "Causal Language Modeling / Text Generation",
+      "precision_macro": "N/A",
+      "recall_macro": "N/A",
+      "f1_macro": "N/A",
+      "bleu_4": 0.0004,
+      "rouge_l": 0.1162,
+      "perplexity": 36.56,
+      "avg_epoch_time_s": 222.6,
+      "epochs": 5
+    },
+    "TextGAN": {
+      "model": "Text-GAN (1D-CNN Discriminator + GRU Generator)",
+      "task": "Adversarial Text Generation",
+      "discriminator": {
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0,
+        "accuracy": 1.0
+      },
+      "generator": {
+        "bleu_4": 0.0,
+        "rouge_l": 0.01
+      },
+      "avg_epoch_time_s": 1.0,
+      "epochs": 10,
+      "note": "Discriminator reaching 1.0000 across all metrics combined with near-zero generator BLEU/ROUGE indicates mode collapse, not successful generation. See Part 6.3.3 of the notebook for full analysis."
+    }
+  }
+}

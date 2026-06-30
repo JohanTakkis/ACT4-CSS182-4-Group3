@@ -1,0 +1,53 @@
+{
+  "epochs": 10,
+  "d_loss": [
+    0.8647,
+    0.1341,
+    0.0452,
+    0.0223,
+    0.0149,
+    0.0105,
+    0.0072,
+    0.006,
+    0.0052,
+    0.0041
+  ],
+  "g_loss": [
+    1.2574,
+    3.7429,
+    5.6293,
+    6.7706,
+    7.8727,
+    8.6345,
+    9.4537,
+    10.1737,
+    10.696,
+    10.9807
+  ],
+  "d_acc": [
+    0.8984,
+    0.996,
+    0.9986,
+    0.9992,
+    0.9992,
+    0.9995,
+    0.9999,
+    0.9999,
+    0.9999,
+    0.9999
+  ],
+  "epoch_time": [
+    2.1,
+    1.1,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.9
+  ],
+  "avg_epoch_time_s": 1.0,
+  "note": "Discriminator accuracy converging to 0.9999 while Generator loss monotonically increases from 1.26 to 10.98 is the signature of mode collapse / discriminator overpowering, not stable adversarial convergence."
+}

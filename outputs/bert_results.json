@@ -1,0 +1,11 @@
+{
+  "model": "bert-base-uncased",
+  "task": "Sentiment Classification",
+  "precision_macro": 0.8676,
+  "recall_macro": 0.8675,
+  "f1_macro": 0.867,
+  "accuracy": 0.867,
+  "rouge_l": 0.6714,
+  "avg_epoch_time_s": 58.5,
+  "epochs": 3
+}
